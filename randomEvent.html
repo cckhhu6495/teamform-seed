@@ -16,7 +16,7 @@
 					<td><b>Join(In Person)</b></td>
 				</tr>
 				
-				<tr data-ng-repeat="x in event| orderBy:random">
+				<tr data-ng-repeat="x in event| orderBy:random| limitTo:10">
 					<td align="center">{{x.name}}</td>
 					<td align="center">{{x.intro}}</td>
 					<td align="center">
@@ -28,9 +28,9 @@
 			</table>
 		</div>
 		<br><br><br>	
-		Still no idea? Why not try another set of events?
-		<button>
-		  Another set
+		Still no idea? 
+		<button ng-click="">
+		  Try again!!!
 		</button>
         
 	</div>
